@@ -13,7 +13,7 @@
 <body>
     <header class="top">
         <h2>Travel Blog</h2>
-        <button class="drk-mode">Dark Mode</button>
+        <button id="drk-mode">Dark Mode</button>
     </header>
 
     <main class="container">
@@ -24,15 +24,15 @@
         <div class="input-form">
             <form id="blog-post">
                 <label for="username"> Username:
-                    <input type="text" id="username" required>
+                    <input type="text" id="username" name="username" required>
                 </label>
                 <label for="post-title"> Title:
-                    <input type="text" id="title" required>
+                    <input type="text" id="post-title" name="title" required>
                 </label>
                 <label for="blog-post"> Write your blog
-                    <input type="text" id="blog-post" required>
+                    <input type="text" id="blog-post" name="post" required>
                 </label>
-                <button class="submit">Submit your post</button>
+                <button id="submit">Submit your post</button>
             </form>
         </div>
     </main>
