@@ -5,39 +5,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>My Blog</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="form.css" />
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="assets/css/form.css"/>
 </head>
 
 <body>
     <header class="top">
         <h2>Travel Blog</h2>
-        <button id="drk-mode">Dark Mode</button>
+        <button id="drk-mode" onclick="changeMode('assets/css/form.css')">Dark Mode</button>
     </header>
 
     <main class="container">
+        <h2>What's Your Favorite Travel Memory?</h2>
         <div class= "trvl-img">
-            <img src="assets/image/airplane.jpg">
+            <img src="assets/image/airplane.jpg" height="600px" width="600px">
         </div>
 
         <div class="input-form">
-            <form id="blog-post">
-                <label for="username"> Username:
-                    <input type="text" id="username" name="username" required>
-                </label>
-                <label for="post-title"> Title:
-                    <input type="text" id="post-title" name="title" required>
-                </label>
-                <label for="blog-post"> Write your blog
-                    <input type="text" id="blog-post" name="post" required>
-                </label>
-                <button id="submit">Submit your post</button>
+            <form id="form">
+                <label for="username"> Username:</label>
+                    <input type="text" id="username" name="username" required><br>
+                <label for="post-title"> Title:</label>
+                    <input type="text" id="post-title" name="title" required><br>
+                <label for="blog-post"> Write your blog</label>
+                    <input type="text" id="post-content" name="post" required><br>
+
+                <button id="submit" onclick="storeInput()">Submit your post</button>
             </form>
         </div>
     </main>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="assets/js/form.js"></script>
 <script src="assets/js/logic.js"></script>
 </html>

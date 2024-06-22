@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-.conainer
+.conainer 
 
 .trvl-img {
-    size: 250px;
+    height: 500px;
+    width: 500px;
 }
