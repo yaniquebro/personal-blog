@@ -4,9 +4,60 @@
     box-sizing: border-box;
 }
 
-.conainer 
+header {
+    color: rgb(66, 66, 66);
+    border-radius: 60%;
+    text-align: center;
+    padding: 18.2%;
+    margin: 40px 40px;
+    font-size: large;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;  
+}
+
+.drk-mode {
+    position: absolute;
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+    top: 35px;
+    right: 35px;
+}
+.conainer {
+    display: flex;
+    border: 10px rgb(66,66,66);
+    overflow: hidden;
+    margin: 15px;
+}
 
 .trvl-img {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
 }
+
+/* Styling for the dark mode */
+body.dark-mode {
+    background-color: rgba(0, 0, 0, 0.901);
+    color: white;
+    border: 10px double white;
+}
+
+body.dark-mode  {
+    color: white;
+    border: medium solid white;
+}
+
+/* Makes the page responsive */
+@media screen and (max-width: 910px ) {
+body {
+    flex-wrap: wrap;
+    overflow: visible;
+}
+header {
+    width: 100%;
+}
+}
+
