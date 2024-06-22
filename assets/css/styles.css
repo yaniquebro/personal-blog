@@ -36,8 +36,9 @@
 }
 
 /* header */
-.h-logo{
-    padding-right:1rem ;
+header .h-logo{
+    padding-right: rem;
+    float: left;
 }
 
 header {
@@ -101,4 +102,10 @@ header::after {
 
 .icon-moon {
     fill: var(--icon-moon)
+}
+
+.trvl-img img {
+    height: 400px;
+    width: 400px;
+    border-radius: 30%;
 }

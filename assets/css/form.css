@@ -1,60 +1,148 @@
+/* Variables */
+:root[data-theme="light"] {
 
-header {
-    font-size: larger;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    --submit: black;
+    --submit-color: white;
+}
+
+:root[data-theme="dark"] {
+
+    --submit: white;
+    --submit-color: black;
+}
+
+/* Main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
 }
-#input-form {
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 30%;
+
+
+/* left */
+
+.left-side {
+    border-right: 4px solid var(--border-color);
+    align-items: center;
+    display: block;
 }
-@media only screen and (max-width: 500px) {
-    #info {
-        margin: 0%;
+
+.trvl-img img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.left-side h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 2px 1px grey;
+}
+
+/* right */
+
+.rights-side {
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid var(--border-color);
+    margin-left: 0px;
+}
+
+.right-side p {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 100px;
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form */
+
+#form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input[type=text], select, textarea {
+    width: 600px;
+    padding: 12px;
+    box-shadow: 1px 1px gray;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    vertical-align: top;
+}
+  
+  button[type=submit] {
+    background-color: var(--submit);
+    color: var(--submit-color);
+    width: 600px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+  #post-content {
+    height: 100px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 1025px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }  
+    .leftside {
+        border-right: none;
+    }
+    .rightside {
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trvl-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    input[type=text], select, textarea {
         width: 100%;
     }
-}
-#username {
-    width: 100%;
-}
-#post-title {
-    width: 100%;
-}
-#post-content {
-    width: 100%;
-}
 
-#darkModeCircle {
-    display: none;
-}
-@media only screen and (max-width: 500px) {
-    #circle {
-        float: inline-start;
-        margin-left: 35%;
-        margin-bottom: 10%;
+    button[type=submit] {
+        width: 100%; 
+    
     }
-}
-.submit {
-    background-color: rgb(224, 31, 144);
-    color: rgb(255, 255, 255);
-    width: 100%;
-}
-.lines {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    bottom: 20%;
-    border-right: solid 1px black;
-}
-@media only screen and (max-width: 1300px) {
-    .lines {
-        display: none;
-    }
-}
 
+    #post-content {
+        height: 100px;
+    }
+
+}
