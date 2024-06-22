@@ -29,12 +29,7 @@
 #content {
     width: 100%;
 }
-#circle {
-    float: left;
-    width: 30%;
-    margin-top: 5%;
-    margin-left: 10%;
-}
+
 #darkModeCircle {
     display: none;
 }
@@ -61,10 +56,4 @@
     .lines {
         display: none;
     }
-}
-#sun {
-    width: 10px;  
-}
-#moon {
-    width: 10px; 
 }

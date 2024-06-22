@@ -6,38 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Travel Blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="assets/css/styles.css"/>
   <link rel="stylesheet" href="assets/css/form.css"/>
 </head>
 
 <body>
-    <header class="top">
+    <header class="header">
         <h2>Travel Blog</h2>
-        <button id="drk-mode" onclick="changeMode('assets/css/form.css')">Dark Mode</button>
+
+        <div class="theme-switcher">
+            <span class="material-symbols-sharp">light_mode</span>
+            <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+
+        <!-- <button id="drk-mode" onclick="changeMode('assets/css/form.css')">Dark Mode</button> -->
     </header>
 
-    <main class="container">
-        <h2>What's Your Favorite Travel Memory?</h2>
-        <div class= "trvl-img">
-            <img src="assets/image/airplane.jpg" height="600px" width="600px">
-        </div>
+    <main>
+        <div class="left-side">
+            <h2>What's Your Favorite Travel Memory?</h2>
 
-        <div class="input-form">
-            <form id="form">
-                <label for="username"> Username:</label>
-                    <input type="text" id="username" name="username" required><br>
-                <label for="post-title"> Title:</label>
-                    <input type="text" id="post-title" name="title" required><br>
-                <label for="blog-post"> Write your blog</label>
+            <div class= "trvl-img">
+                <img src="assets/image/airplane.jpg">
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <div class="container">
+                <form id="form">
+    
+                    <label for="username"> Username:</label>
+                    <br><input type="text" id="username">
+    
+                    <br><label for="post-title"> Title:</label>
+                    <br><input type="text" id="post-title"><br>
+    
+                    <br><label for="post-content">Let's Hear It</label>
+                    <br>
                     <input type="text" id="post-content" name="post" required><br>
-
-                <button id="submit" onclick="storeInput()">Submit your post</button>
-            </form>
+    
+                    <textarea name="post-content" id="post-content" rows="10"></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
+        
     </main>
 
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/logic.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="assets/js/form.js"></script>
-<script src="assets/js/logic.js"></script>
+
 </html>

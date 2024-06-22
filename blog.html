@@ -5,53 +5,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Travel Blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="assets/css/blog.css"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <title>Travel Blog</title>
 </head>
 
 <body>
 
-    <header class="top">
-        <h2>Travel Blog</h2>
-        <button class="drk-mode">Dark Mode</button>
-    </header>
+  <header class="header">
+    <h2>Travel Blog</h2>
+    <button id="backButton">Back</button>
+
+    <div class="theme-switcher">
+        <span class="material-symbols-sharp">light_mode</span>
+        <span class="material-symbols-sharp">dark_mode</span>
+    </div>
+
+    <!-- <button id="drk-mode" onclick="changeMode('assets/css/form.css')">Dark Mode</button> -->
+  </header>
 
     <main>
-    <div id="allPosts">
-      <div id="post1" class="post">
-          <h1 id = 'title1' class="title"></h1>
-          <h1 id = 'content1' class="content"></h1>
-          <h1 id = 'name1' class="name"></h1>
+      <div class="blogPost">
       </div>
-      <br><br>
-      <div id="post2" class="post">
-          <h1 id = 'title2' class="title"></h1>
-          <h1 id = 'content2' class="content"></h1>
-          <h1 id = 'name2' class="name"></h1>
-      </div>
-      <br><br>
-      <div id="post3" class="post">
-          <h1 id = 'title3' class="title"></h1>
-          <h1 id = 'content3' class="content"></h1>
-          <h1 id = 'name3' class="name"></h1>
-      </div>
-      <br><br>
-      <div id="post4" class="post">
-          <h1 id = 'title4' class="title"></h1>
-          <h1 id = 'content4' class="content"></h1>
-          <h1 id = 'name4' class="name"></h1>
-      </div>
-      <br><br>
-      <div id="post5" class="post">
-          <h1 id = 'title5' class="title"></h1>
-          <h1 id = 'content5' class="content"></h1>
-          <h1 id = 'name5' class="name"></h1>
-      </div>
-      <br><br>
-  </div>
     </main>
-<button id="backButton" onClick="history.back()">Go Back</button>
-<script src="assets/js/blog.js"></script>
-<script src="assets/js/logic.js"></script>
+
+    <footer>
+      <div class="footer">
+        <div id="footer-center">
+          <p>Made by Yani<span class="material-symbols-sharp">favorite</span></p>
+        </div>
+      </div>
+    </footer>
+  
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/logic.js"></script>
 </body>
 </html>
