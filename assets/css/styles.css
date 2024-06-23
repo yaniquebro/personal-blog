@@ -36,10 +36,6 @@
 }
 
 /* header */
-header .h-logo{
-    padding-right: rem;
-    float: left;
-}
 
 header {
     display: flex;
