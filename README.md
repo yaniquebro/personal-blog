@@ -8,9 +8,7 @@ For this project I created a travel blog, where users can post their favorite tr
 2. Contributions
 
 ## Deployed Page
-Link: 
-
-
+Link: https://yaniquebro.github.io/personal-blog/
 
 ## Contributions 
 * https://youtu.be/-ZRDZyUjEEI?si=5zSCmDf9Zq_RUV1x
